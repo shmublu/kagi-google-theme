@@ -1,0 +1,19 @@
+# Development / working files
+*.html
+kagi.css
+kagi_production.css
+test-kagi.png
+audit_*.png
+
+# Saved browser pages
+orion rc browser - Google Search_files/
+orion rc browser - Kagi Search_files/
+test - Kagi Search_files/
+test thing - Kagi Search_files/
+
+# Render history
+renders/
+
+# Build artifacts
+_frames/
+record_demo.py
