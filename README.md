@@ -18,9 +18,26 @@ I wanted to switch to Kagi but kept missing Google's layout. Stockhold syndrome 
 
 Set your Kagi theme to **Default** (light) first.
 
+## Development
+
+`custom.css` is the built, minified file you paste into Kagi — edit `src/custom.css`
+instead, then rebuild:
+
+```sh
+cd test && npm i && cd ..
+node build.js
+```
+
+The build fails rather than writing if the result exceeds Kagi's 40000-character
+cap for custom CSS.
+
+`test/verify.js` drives a real Kagi session (Playwright) to check the filter bar
+and the advanced-search date range on desktop and mobile. It needs a session token
+in `test/session-token.txt`, from [Settings > User Details](https://kagi.com/settings/user_details).
+
 ## Customization
 
-Colors and dimensions are CSS variables at the top of the file:
+Colors and dimensions are CSS variables at the top of `src/custom.css`:
 
 ```css
 :root {
@@ -31,6 +48,8 @@ Colors and dimensions are CSS variables at the top of the file:
     /* ... */
 }
 ```
+
+Rebuild with `node build.js` after changing them.
 
 ## License
 

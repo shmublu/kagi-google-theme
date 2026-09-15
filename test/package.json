@@ -1,0 +1,14 @@
+{
+  "name": "kagi-google-theme-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "auth": "node auth.js",
+    "shot": "node screenshot.js"
+  },
+  "dependencies": {
+    "clean-css": "^5.3.3",
+    "playwright": "^1.48.0"
+  }
+}

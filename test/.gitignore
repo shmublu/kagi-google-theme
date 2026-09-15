@@ -1,0 +1,6 @@
+node_modules/
+kagi-session.json
+session-token.txt
+chrome-profile/
+out/
+out-with-important/
